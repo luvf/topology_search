@@ -1,0 +1,38 @@
+{
+  "n_threads": 64,
+  "injection_search":
+  {
+    "n_chronics": 500,
+    "len_output_chronic": 35,
+    "levels" : ["selected_injections_hard", "selected_injections_easy"],
+    "game_level_hard" : "selected_injections_hard",
+    "game_level_easy" : "selected_injections_easy"
+  },
+  "topology_search":
+  {
+    "epochs": 50,
+    "pop_size" : 200,
+    "fit_scale": 1,
+    "comb_rate": 0.1,
+    "mut_rate": 0.1,
+    "len_evaluation_chronic" : 30,
+    "indicator" : "ihd"
+
+  },
+  "optimal_path":
+  {
+    "n_scenarios" :[0,1,2,3,4,5,6,7,8,9],
+    "n_steps" : [300, 600, 900, 900, 600, 600, 600, 300, 300, 300],
+
+    "real_n_steps" : [288, 576, 864, 864, 576, 576, 576, 288, 288, 288],
+    "game_level" : "test_backendonly"
+
+  },
+  "optimal_path2":
+  {
+    "n_scenarios": 1,
+    "n_steps" : 100,
+    "game_level" : "chronics_contestants"
+
+  }
+}
